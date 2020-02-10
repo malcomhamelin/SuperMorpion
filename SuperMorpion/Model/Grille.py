@@ -17,13 +17,15 @@ class Grille:
         self.cases = initCases()
         self.x = x
         self.y = y
+        self.gagnant = None
 
     def __str__(self):
         grille = ''
         for i in range(3):
             for j in range(3):
                 grille = grille + self.cases[i][j].__str__() + ' '
-            grille = grille + '\n'
+            if i < 2:
+                grille = grille + '\n'
 
         return grille
 

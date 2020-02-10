@@ -6,9 +6,6 @@ class JeuMorpion:
     def __init__(self, grille):
         self.grille = grille
 
-    def __str__(self):
-        return ''
-
     def jouer(self, joueur):
         aJoue = False
         while aJoue is False:
